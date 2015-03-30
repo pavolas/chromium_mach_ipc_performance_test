@@ -4,7 +4,7 @@ This project tests the performance of two different inter-process communication
 channels on OSX: inline Mach messages and POSIX pipes.
 
 ## Measurement 1: Inline Mach Message.
-### Variables: Size of initial message M, size of pre-constructed buffer K.
+##### Variables: Size of initial message M, size of pre-constructed buffer K.
 1. Process A starts with message M, a char* buffer.
 2. Process A constructs a Mach Message, and copies M into the Mach Message.
 3. Process A sends the Mach Message to a port owned by Process B.
@@ -14,8 +14,8 @@ channels on OSX: inline Mach messages and POSIX pipes.
 7. Process B ends with message M2, a char* buffer.
 
 ## Measurement 2: POSIX pipe.
-### Variables: Size of initial message M.
-### Constants: The number of bytes to read from the pipe, L. A Chromium constant set to 4096.
+##### Variables: Size of initial message M.
+##### Constants: The number of bytes to read at a time from the pipe, L. This is set to 4096 in Chromium.
 1. Process A starts with message M, a char* buffer.
 2. Process A writes the message into a POSIX pipe.
 3. Process B knows the size of the message being sent, and allocates a buffer M2.
