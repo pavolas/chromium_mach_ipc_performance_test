@@ -59,11 +59,11 @@ posix_results = run_measurements(packet_sizes_to_measure, run_posix_measurement)
 mach_results = run_measurements(packet_sizes_to_measure, run_mach_measurement)
 
 print "posix measurements"
-print "[packet size]     [median latency]"
+print "[message size]     [time in microseconds]"
 for key in packet_sizes_to_measure:
   print str(key) + "              " + str(posix_results[key])
 
 print "mach measurements"
-print "[packet size]     [median latency]"
+print "[message size]     [time in microseconds]"
 for key in packet_sizes_to_measure:
   print str(key) + "              " + str(mach_results[key])

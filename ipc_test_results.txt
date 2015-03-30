@@ -1,7 +1,7 @@
 OSX 10.9, laptop.
 
 posix measurements
-[packet size]     [median latency]
+[message size]     [time in microseconds]
 100              20
 200              20
 500              19
@@ -25,7 +25,7 @@ posix measurements
 
 
 mach measurements
-[packet size]     [median latency]
+[message size]     [time in microseconds]
 100              9
 200              9
 500              8
